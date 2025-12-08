@@ -1,0 +1,14 @@
+<html>
+<body>
+
+<!-- HEADER -->
+<div th:insert="layout/header :: header"></div>
+
+<!-- DYNAMIC BODY injected from client service -->
+<div th:utext="${body}"></div>
+
+<!-- FOOTER -->
+<div th:insert="layout/footer :: footer"></div>
+
+</body>
+</html>

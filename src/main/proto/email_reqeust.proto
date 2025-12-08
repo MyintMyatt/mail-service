@@ -1,0 +1,53 @@
+syntax= "proto3";
+
+option java_multiple_files= true;
+option java_package = "orion.grpc.mail";
+option java_outer_classname = "EmailRequestClass";
+
+message EmailRequest{
+  string subject = 1;
+  repeated ToReceiver receivers = 2;
+  repeated ToCCReceiver cc = 3;
+  repeated ToBCCReceiver bcc = 4;
+  /*main dynamic email body*/
+  string emailBodyHtml = 5;
+//  /*option*/
+//  map<string, string> variables = 6;
+
+}
+
+message ToReceiver{
+  string email = 1;
+}
+
+message ToCCReceiver{
+  string email = 1;
+}
+
+message ToBCCReceiver{
+  string email = 1;
+}
+
+message EmailResponse{
+  int32  code = 1;
+  bool success = 2;
+  string message = 3;
+}
+
+
+service EmailService{
+  rpc SendEmail(EmailRequest) returns (EmailResponse);
+}
+
+//
+//message Person {
+//  string name = 1;
+//  int32 id = 2;
+//  repeated string emails = 3; // This generates a List<String> in Java
+//  repeated PhoneNumber phones = 4; // This generates a List<PhoneNumber> in Java
+//}
+//
+//message PhoneNumber {
+//  string number = 1;
+//  // ... other phone number fields
+//}
