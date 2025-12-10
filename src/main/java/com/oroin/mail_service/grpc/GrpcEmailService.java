@@ -4,6 +4,8 @@ import com.oroin.mail_service.service.EmailSenderService;
 import com.oroin.mail_service.service.EmailTemplateBuilder;
 import io.grpc.stub.StreamObserver;
 import lombok.RequiredArgsConstructor;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.grpc.server.service.GrpcService;
 import orion.grpc.mail.EmailRequest;
 import orion.grpc.mail.EmailResponse;
@@ -13,12 +15,14 @@ import orion.grpc.mail.EmailServiceGrpc;
 @RequiredArgsConstructor
 public class GrpcEmailService extends EmailServiceGrpc.EmailServiceImplBase {
 
+    private static final Logger logger = LoggerFactory.getLogger(GrpcEmailService.class);
     private final EmailTemplateBuilder templateBuilder;
     private final EmailSenderService emailSenderService;
 
     @Override
     public void sendEmail(EmailRequest request, StreamObserver<EmailResponse> responseObserver) {
 
+        logger.info("income mail request : " + request.getSubject() + request.getReceiversList());
         /*build email template*/
         String finalEmailHtml = templateBuilder.buildEmailTemplatePure(request.getEmailBodyHtml());
 
@@ -39,7 +43,7 @@ public class GrpcEmailService extends EmailServiceGrpc.EmailServiceImplBase {
         responseObserver.onNext(response);
         responseObserver.onCompleted();
 
-
+        logger.info("send response to request service : " + response.getMessage());
     }
 
 }

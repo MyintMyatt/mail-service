@@ -2,14 +2,15 @@ server:
   port: 8081
   http2:
     enabled: true
+# grpc config
+grpc:
+  server:
+    port: 9090
+    security:
+      enabled: false
 spring:
   application:
     name: mail-service
-  grpc:
-    server:
-      port: 9090
-      security:
-        enabled: false
   profiles:
     active: prod
   # database config
@@ -43,4 +44,15 @@ spring:
           connectiontimeout: 5000
           timeout: 5000
           writetimeout: 5000
+
+
+# logging
+logging:
+  level:
+    root: INFO
+  structured:
+    format:
+      console: ecs
+  file:
+    name: mail-service-log.json
 

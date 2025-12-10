@@ -5,6 +5,8 @@ import jakarta.mail.internet.AddressException;
 import jakarta.mail.internet.InternetAddress;
 import jakarta.mail.internet.MimeMessage;
 import lombok.RequiredArgsConstructor;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
@@ -17,9 +19,13 @@ import java.util.stream.Collectors;
 @RequiredArgsConstructor
 public class EmailSenderService {
 
+    private static final Logger logger = LoggerFactory.getLogger(EmailSenderService.class);
     private final JavaMailSender mailSender;
 
     public boolean send(List<String> to, List<String> cc, List<String> bcc, String subject, String html) {
+
+        logger.info("sending otp mail", to, cc, subject);
+
         try {
             InternetAddress[] addressTo = to.stream()
                     .map(email -> {
@@ -68,10 +74,12 @@ public class EmailSenderService {
             helper.addInline("companyLogo", new ClassPathResource("static/logo.jpg"));
             mailSender.send(message);
 
+            logger.info("sent otp mail successfully");
             // return success;
             return true;
         } catch (MessagingException e) {
             System.err.println(e.getMessage());
+            logger.error("sent otp mail filed" + e.getMessage());
             // return send mail failed;
             return false;
         }

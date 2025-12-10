@@ -1,6 +1,8 @@
 package com.oroin.mail_service.service;
 
 import lombok.RequiredArgsConstructor;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 import org.thymeleaf.context.Context;
 import org.thymeleaf.spring6.SpringTemplateEngine;
@@ -11,6 +13,7 @@ import java.io.IOException;
 @RequiredArgsConstructor
 public class EmailTemplateBuilder {
 
+    private static final Logger logger = LoggerFactory.getLogger(EmailTemplateBuilder.class);
     private final SpringTemplateEngine engine;
 
     public String buildEmailTemplateThymleaf(String bodyHtml) {
@@ -28,7 +31,11 @@ public class EmailTemplateBuilder {
             );
 
             // Replace placeholder with body HTML
-            return template.replace("{{body}}", bodyHtml);
+            String result = template.replace("{{body}}", bodyHtml);
+
+            logger.info("successfully built mail template");
+
+            return result;
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
