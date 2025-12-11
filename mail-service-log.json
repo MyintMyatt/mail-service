@@ -1,15 +1,15 @@
-2025-12-10T22:11:11.441+06:30  INFO 41372 --- [mail-service] [main] c.o.mail_service.MailServiceApplication  : Starting MailServiceApplication using Java 21.0.9 with PID 41372 (/home/orion/Projects/TechBasedProj/spring-boot/demo-microservice/mail-service/build/classes/java/main started by orion in /home/orion/Projects/TechBasedProj/spring-boot/demo-microservice/mail-service)
-2025-12-10T22:11:11.451+06:30  INFO 41372 --- [mail-service] [main] c.o.mail_service.MailServiceApplication  : The following 1 profile is active: "prod"
-2025-12-10T22:11:12.049+06:30  INFO 41372 --- [mail-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-12-10T22:11:12.076+06:30  INFO 41372 --- [mail-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 0 JPA repository interfaces.
-2025-12-10T22:11:12.495+06:30  INFO 41372 --- [mail-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-12-10T22:11:12.532+06:30  INFO 41372 --- [mail-service] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 7.1.8.Final
-2025-12-10T22:11:12.892+06:30  INFO 41372 --- [mail-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-12-10T22:11:12.918+06:30  INFO 41372 --- [mail-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-12-10T22:11:13.094+06:30  INFO 41372 --- [mail-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6df2af02
-2025-12-10T22:11:13.100+06:30  INFO 41372 --- [mail-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-12-10T22:11:13.123+06:30  WARN 41372 --- [mail-service] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-12-10T22:11:13.140+06:30  INFO 41372 --- [mail-service] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2025-12-11T14:21:20.128+06:30  INFO 22244 --- [mail-service] [main] c.o.mail_service.MailServiceApplication  : Starting MailServiceApplication using Java 21.0.8 with PID 22244 (D:\Orion\Projects\Personal\TechBasedProject\pos-microservices\mail-service\build\classes\java\main started by nyinyimyintmyat in D:\Orion\Projects\Personal\TechBasedProject\pos-microservices\mail-service)
+2025-12-11T14:21:20.142+06:30  INFO 22244 --- [mail-service] [main] c.o.mail_service.MailServiceApplication  : The following 1 profile is active: "prod"
+2025-12-11T14:21:20.805+06:30  INFO 22244 --- [mail-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-11T14:21:20.821+06:30  INFO 22244 --- [mail-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 0 JPA repository interfaces.
+2025-12-11T14:21:21.252+06:30  INFO 22244 --- [mail-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-11T14:21:21.321+06:30  INFO 22244 --- [mail-service] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 7.1.8.Final
+2025-12-11T14:21:21.753+06:30  INFO 22244 --- [mail-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-11T14:21:21.797+06:30  INFO 22244 --- [mail-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-11T14:21:22.040+06:30  INFO 22244 --- [mail-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@70884875
+2025-12-11T14:21:22.040+06:30  INFO 22244 --- [mail-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-11T14:21:22.072+06:30  WARN 22244 --- [mail-service] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-11T14:21:22.096+06:30  INFO 22244 --- [mail-service] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [jdbc:postgresql://localhost:5432/pos_db]
 	Database driver: PostgreSQL JDBC Driver
 	Database dialect: PostgreSQLDialect
@@ -21,29 +21,26 @@
 	Pool: DatasourceConnectionProviderImpl
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-12-10T22:11:13.462+06:30  INFO 41372 --- [mail-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-12-10T22:11:13.470+06:30  INFO 41372 --- [mail-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-12-10T22:11:14.091+06:30  INFO 41372 --- [mail-service] [main] o.s.g.s.ShadedNettyGrpcServerFactory     : Registered gRPC service: EmailService
-2025-12-10T22:11:14.092+06:30  INFO 41372 --- [mail-service] [main] o.s.g.s.ShadedNettyGrpcServerFactory     : Registered gRPC service: grpc.reflection.v1.ServerReflection
-2025-12-10T22:11:14.092+06:30  INFO 41372 --- [mail-service] [main] o.s.g.s.ShadedNettyGrpcServerFactory     : Registered gRPC service: grpc.health.v1.Health
-2025-12-10T22:11:14.155+06:30  INFO 41372 --- [mail-service] [main] o.s.g.s.lifecycle.GrpcServerLifecycle    : gRPC Server started, listening on address: [/[0:0:0:0:0:0:0:0]:9090]
-2025-12-10T22:11:14.161+06:30  INFO 41372 --- [mail-service] [main] c.o.mail_service.MailServiceApplication  : Started MailServiceApplication in 3.348 seconds (process running for 3.751)
-2025-12-10T22:12:55.121+06:30  INFO 41372 --- [mail-service] [SpringApplicationShutdownHook] o.s.g.s.lifecycle.GrpcServerLifecycle    : Completed gRPC server shutdown
-2025-12-10T22:12:55.137+06:30  INFO 41372 --- [mail-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-12-10T22:12:55.142+06:30  INFO 41372 --- [mail-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-12-10T22:12:55.151+06:30  INFO 41372 --- [mail-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-12-10T22:12:57.938+06:30  INFO 42063 --- [mail-service] [main] c.o.mail_service.MailServiceApplication  : Starting MailServiceApplication using Java 21.0.9 with PID 42063 (/home/orion/Projects/TechBasedProj/spring-boot/demo-microservice/mail-service/build/classes/java/main started by orion in /home/orion/Projects/TechBasedProj/spring-boot/demo-microservice/mail-service)
-2025-12-10T22:12:57.957+06:30  INFO 42063 --- [mail-service] [main] c.o.mail_service.MailServiceApplication  : The following 1 profile is active: "prod"
-2025-12-10T22:12:58.717+06:30  INFO 42063 --- [mail-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-12-10T22:12:58.740+06:30  INFO 42063 --- [mail-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 0 JPA repository interfaces.
-2025-12-10T22:12:59.292+06:30  INFO 42063 --- [mail-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-12-10T22:12:59.346+06:30  INFO 42063 --- [mail-service] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 7.1.8.Final
-2025-12-10T22:12:59.742+06:30  INFO 42063 --- [mail-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-12-10T22:12:59.772+06:30  INFO 42063 --- [mail-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-12-10T22:13:00.026+06:30  INFO 42063 --- [mail-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@72715e61
-2025-12-10T22:13:00.029+06:30  INFO 42063 --- [mail-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-12-10T22:13:00.061+06:30  WARN 42063 --- [mail-service] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-12-10T22:13:00.085+06:30  INFO 42063 --- [mail-service] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2025-12-11T14:21:22.469+06:30  INFO 22244 --- [mail-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-11T14:21:22.469+06:30  INFO 22244 --- [mail-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-11T14:21:22.612+06:30  INFO 22244 --- [mail-service] [main] g.s.a.GrpcServerFactoryAutoConfiguration : Detected grpc-netty-shaded: Creating ShadedNettyGrpcServerFactory
+2025-12-11T14:21:23.148+06:30  INFO 22244 --- [mail-service] [main] n.d.b.g.s.s.AbstractGrpcServerFactory    : Registered gRPC service: EmailService, bean: grpcEmailService, class: com.oroin.mail_service.grpc.GrpcEmailService
+2025-12-11T14:21:23.148+06:30  INFO 22244 --- [mail-service] [main] n.d.b.g.s.s.AbstractGrpcServerFactory    : Registered gRPC service: grpc.health.v1.Health, bean: grpcHealthService, class: io.grpc.protobuf.services.HealthServiceImpl
+2025-12-11T14:21:23.148+06:30  INFO 22244 --- [mail-service] [main] n.d.b.g.s.s.AbstractGrpcServerFactory    : Registered gRPC service: grpc.reflection.v1alpha.ServerReflection, bean: protoReflectionService, class: io.grpc.protobuf.services.ProtoReflectionService
+2025-12-11T14:21:23.384+06:30  INFO 22244 --- [mail-service] [main] n.d.b.g.s.s.GrpcServerLifecycle          : gRPC Server started, listening on address: *, port: 9090
+2025-12-11T14:21:23.384+06:30  INFO 22244 --- [mail-service] [main] c.o.mail_service.MailServiceApplication  : Started MailServiceApplication in 3.688 seconds (process running for 4.066)
+2025-12-11T14:29:43.451+06:30  INFO 31468 --- [mail-service] [main] c.o.mail_service.MailServiceApplication  : Starting MailServiceApplication using Java 21.0.8 with PID 31468 (D:\Orion\Projects\Personal\TechBasedProject\pos-microservices\mail-service\build\classes\java\main started by nyinyimyintmyat in D:\Orion\Projects\Personal\TechBasedProject\pos-microservices\mail-service)
+2025-12-11T14:29:43.451+06:30  INFO 31468 --- [mail-service] [main] c.o.mail_service.MailServiceApplication  : The following 1 profile is active: "prod"
+2025-12-11T14:29:44.132+06:30  INFO 31468 --- [mail-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-11T14:29:44.160+06:30  INFO 31468 --- [mail-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 0 JPA repository interfaces.
+2025-12-11T14:29:44.577+06:30  INFO 31468 --- [mail-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-11T14:29:44.640+06:30  INFO 31468 --- [mail-service] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 7.1.8.Final
+2025-12-11T14:29:45.098+06:30  INFO 31468 --- [mail-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-11T14:29:45.134+06:30  INFO 31468 --- [mail-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-11T14:29:45.371+06:30  INFO 31468 --- [mail-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@305aaedf
+2025-12-11T14:29:45.371+06:30  INFO 31468 --- [mail-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-11T14:29:45.414+06:30  WARN 31468 --- [mail-service] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-11T14:29:45.434+06:30  INFO 31468 --- [mail-service] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [jdbc:postgresql://localhost:5432/pos_db]
 	Database driver: PostgreSQL JDBC Driver
 	Database dialect: PostgreSQLDialect
@@ -55,88 +52,27 @@
 	Pool: DatasourceConnectionProviderImpl
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-12-10T22:13:00.543+06:30  INFO 42063 --- [mail-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-12-10T22:13:00.556+06:30  INFO 42063 --- [mail-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-12-10T22:13:01.462+06:30  INFO 42063 --- [mail-service] [main] o.s.g.s.ShadedNettyGrpcServerFactory     : Registered gRPC service: EmailService
-2025-12-10T22:13:01.463+06:30  INFO 42063 --- [mail-service] [main] o.s.g.s.ShadedNettyGrpcServerFactory     : Registered gRPC service: grpc.reflection.v1.ServerReflection
-2025-12-10T22:13:01.464+06:30  INFO 42063 --- [mail-service] [main] o.s.g.s.ShadedNettyGrpcServerFactory     : Registered gRPC service: grpc.health.v1.Health
-2025-12-10T22:13:01.572+06:30  INFO 42063 --- [mail-service] [main] o.s.g.s.lifecycle.GrpcServerLifecycle    : gRPC Server started, listening on address: [/[0:0:0:0:0:0:0:0]:9090]
-2025-12-10T22:13:01.586+06:30  INFO 42063 --- [mail-service] [main] c.o.mail_service.MailServiceApplication  : Started MailServiceApplication in 4.257 seconds (process running for 4.646)
-2025-12-10T22:18:19.606+06:30  INFO 42063 --- [mail-service] [grpc-default-executor-0] c.o.mail_service.grpc.GrpcEmailService   : income mail request : Welcome! Please Verify Your Email[nnmm5122004@gmail.com]
-2025-12-10T22:18:19.607+06:30  INFO 42063 --- [mail-service] [grpc-default-executor-0] c.o.m.service.EmailTemplateBuilder       : successfully built mail template
-2025-12-10T22:18:19.608+06:30  INFO 42063 --- [mail-service] [grpc-default-executor-0] c.o.m.service.EmailSenderService         : sending otp mail
-2025-12-10T22:18:29.436+06:30 ERROR 42063 --- [mail-service] [grpc-default-executor-0] io.grpc.internal.SerializingExecutor     : Exception while executing runnable io.grpc.internal.ServerImpl$JumpToApplicationThreadServerStreamListener$1HalfClosed@7aefcfdf
-
-org.springframework.mail.MailAuthenticationException: Authentication failed
-	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:389) ~[spring-context-support-7.0.1.jar:7.0.1]
-	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:337) ~[spring-context-support-7.0.1.jar:7.0.1]
-	at org.springframework.mail.javamail.JavaMailSender.send(JavaMailSender.java:101) ~[spring-context-support-7.0.1.jar:7.0.1]
-	at com.oroin.mail_service.service.EmailSenderService.send(EmailSenderService.java:75) ~[main/:na]
-	at com.oroin.mail_service.grpc.GrpcEmailService.sendEmail(GrpcEmailService.java:30) ~[main/:na]
-	at orion.grpc.mail.EmailServiceGrpc$MethodHandlers.invoke(EmailServiceGrpc.java:246) ~[main/:na]
-	at io.grpc.stub.ServerCalls$UnaryServerCallHandler$UnaryServerCallListener.onHalfClose(ServerCalls.java:182) ~[grpc-stub-1.77.0.jar:1.77.0]
-	at io.grpc.PartialForwardingServerCallListener.onHalfClose(PartialForwardingServerCallListener.java:35) ~[grpc-api-1.77.0.jar:1.77.0]
-	at io.grpc.ForwardingServerCallListener.onHalfClose(ForwardingServerCallListener.java:23) ~[grpc-api-1.77.0.jar:1.77.0]
-	at io.grpc.ForwardingServerCallListener$SimpleForwardingServerCallListener.onHalfClose(ForwardingServerCallListener.java:40) ~[grpc-api-1.77.0.jar:1.77.0]
-	at io.micrometer.core.instrument.binder.grpc.ObservationGrpcServerCallListener.lambda$onHalfClose$1(ObservationGrpcServerCallListener.java:47) ~[micrometer-core-1.16.0.jar:1.16.0]
-	at io.micrometer.observation.Observation.scoped(Observation.java:705) ~[micrometer-observation-1.16.0.jar:1.16.0]
-	at io.micrometer.core.instrument.binder.grpc.ObservationGrpcServerCallListener.onHalfClose(ObservationGrpcServerCallListener.java:47) ~[micrometer-core-1.16.0.jar:1.16.0]
-	at io.grpc.internal.ServerCallImpl$ServerStreamListenerImpl.halfClosed(ServerCallImpl.java:356) ~[grpc-core-1.77.0.jar:1.77.0]
-	at io.grpc.internal.ServerImpl$JumpToApplicationThreadServerStreamListener$1HalfClosed.runInContext(ServerImpl.java:861) ~[grpc-core-1.77.0.jar:1.77.0]
-	at io.grpc.internal.ContextRunnable.run(ContextRunnable.java:37) ~[grpc-core-1.77.0.jar:1.77.0]
-	at io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:133) ~[grpc-core-1.77.0.jar:1.77.0]
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
-	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
-Caused by: jakarta.mail.AuthenticationFailedException: 
-	at org.eclipse.angus.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:949) ~[angus-mail-2.0.5.jar:na]
-	at org.eclipse.angus.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:865) ~[angus-mail-2.0.5.jar:na]
-	at org.eclipse.angus.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:769) ~[angus-mail-2.0.5.jar:na]
-	at jakarta.mail.Service.connect(Service.java:345) ~[jakarta.mail-api-2.1.5.jar:na]
-	at org.springframework.mail.javamail.JavaMailSenderImpl.connectTransport(JavaMailSenderImpl.java:467) ~[spring-context-support-7.0.1.jar:7.0.1]
-	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:386) ~[spring-context-support-7.0.1.jar:7.0.1]
-	... 19 common frames omitted
-Caused by: jakarta.mail.MessagingException: Exception reading response
-	at org.eclipse.angus.mail.smtp.SMTPTransport.readServerResponse(SMTPTransport.java:2520) ~[angus-mail-2.0.5.jar:na]
-	at org.eclipse.angus.mail.smtp.SMTPTransport.simpleCommand(SMTPTransport.java:2439) ~[angus-mail-2.0.5.jar:na]
-	at org.eclipse.angus.mail.smtp.SMTPTransport$LoginAuthenticator.doAuth(SMTPTransport.java:990) ~[angus-mail-2.0.5.jar:na]
-	at org.eclipse.angus.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:931) ~[angus-mail-2.0.5.jar:na]
-	... 24 common frames omitted
-Caused by: java.net.SocketTimeoutException: Read timed out
-	at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:278) ~[na:na]
-	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:304) ~[na:na]
-	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346) ~[na:na]
-	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796) ~[na:na]
-	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:1099) ~[na:na]
-	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:489) ~[na:na]
-	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:483) ~[na:na]
-	at java.base/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70) ~[na:na]
-	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1461) ~[na:na]
-	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1066) ~[na:na]
-	at org.eclipse.angus.mail.util.TraceInputStream.read(TraceInputStream.java:107) ~[angus-mail-2.0.5.jar:na]
-	at java.base/java.io.BufferedInputStream.fill(BufferedInputStream.java:291) ~[na:na]
-	at java.base/java.io.BufferedInputStream.implRead(BufferedInputStream.java:325) ~[na:na]
-	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:312) ~[na:na]
-	at org.eclipse.angus.mail.util.LineInputStream.readLine(LineInputStream.java:104) ~[angus-mail-2.0.5.jar:na]
-	at org.eclipse.angus.mail.smtp.SMTPTransport.readServerResponse(SMTPTransport.java:2500) ~[angus-mail-2.0.5.jar:na]
-	... 27 common frames omitted
-
-2025-12-10T22:29:02.694+06:30  INFO 42063 --- [mail-service] [SpringApplicationShutdownHook] o.s.g.s.lifecycle.GrpcServerLifecycle    : Completed gRPC server shutdown
-2025-12-10T22:29:02.711+06:30  INFO 42063 --- [mail-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-12-10T22:29:02.714+06:30  INFO 42063 --- [mail-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-12-10T22:29:02.719+06:30  INFO 42063 --- [mail-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-12-10T22:29:04.711+06:30  INFO 51494 --- [mail-service] [main] c.o.mail_service.MailServiceApplication  : Starting MailServiceApplication using Java 21.0.9 with PID 51494 (/home/orion/Projects/TechBasedProj/spring-boot/demo-microservice/mail-service/build/classes/java/main started by orion in /home/orion/Projects/TechBasedProj/spring-boot/demo-microservice/mail-service)
-2025-12-10T22:29:04.722+06:30  INFO 51494 --- [mail-service] [main] c.o.mail_service.MailServiceApplication  : The following 1 profile is active: "prod"
-2025-12-10T22:29:05.257+06:30  INFO 51494 --- [mail-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-12-10T22:29:05.271+06:30  INFO 51494 --- [mail-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 JPA repository interfaces.
-2025-12-10T22:29:05.740+06:30  INFO 51494 --- [mail-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-12-10T22:29:05.785+06:30  INFO 51494 --- [mail-service] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 7.1.8.Final
-2025-12-10T22:29:06.099+06:30  INFO 51494 --- [mail-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-12-10T22:29:06.123+06:30  INFO 51494 --- [mail-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-12-10T22:29:06.294+06:30  INFO 51494 --- [mail-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@ab327c
-2025-12-10T22:29:06.296+06:30  INFO 51494 --- [mail-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-12-10T22:29:06.325+06:30  WARN 51494 --- [mail-service] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-12-10T22:29:06.343+06:30  INFO 51494 --- [mail-service] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2025-12-11T14:29:45.809+06:30  INFO 31468 --- [mail-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-11T14:29:45.825+06:30  INFO 31468 --- [mail-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-11T14:29:45.954+06:30  INFO 31468 --- [mail-service] [main] g.s.a.GrpcServerFactoryAutoConfiguration : Detected grpc-netty-shaded: Creating ShadedNettyGrpcServerFactory
+2025-12-11T14:29:46.530+06:30  INFO 31468 --- [mail-service] [main] n.d.b.g.s.s.AbstractGrpcServerFactory    : Registered gRPC service: EmailService, bean: grpcEmailService, class: com.oroin.mail_service.grpc.GrpcEmailService
+2025-12-11T14:29:46.530+06:30  INFO 31468 --- [mail-service] [main] n.d.b.g.s.s.AbstractGrpcServerFactory    : Registered gRPC service: grpc.health.v1.Health, bean: grpcHealthService, class: io.grpc.protobuf.services.HealthServiceImpl
+2025-12-11T14:29:46.530+06:30  INFO 31468 --- [mail-service] [main] n.d.b.g.s.s.AbstractGrpcServerFactory    : Registered gRPC service: grpc.reflection.v1alpha.ServerReflection, bean: protoReflectionService, class: io.grpc.protobuf.services.ProtoReflectionService
+2025-12-11T14:29:46.765+06:30  INFO 31468 --- [mail-service] [main] n.d.b.g.s.s.GrpcServerLifecycle          : gRPC Server started, listening on address: *, port: 9090
+2025-12-11T14:29:46.770+06:30  INFO 31468 --- [mail-service] [main] c.o.mail_service.MailServiceApplication  : Started MailServiceApplication in 3.734 seconds (process running for 4.042)
+2025-12-11T14:48:01.399+06:30  WARN 31468 --- [mail-service] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=8m15s751ms546µs700ns).
+2025-12-11T16:18:34.694+06:30  INFO 20380 --- [mail-service] [main] c.o.mail_service.MailServiceApplication  : Starting MailServiceApplication using Java 21.0.8 with PID 20380 (D:\Orion\Projects\Personal\TechBasedProject\pos-microservices\mail-service\build\classes\java\main started by nyinyimyintmyat in D:\Orion\Projects\Personal\TechBasedProject\pos-microservices\mail-service)
+2025-12-11T16:18:34.694+06:30  INFO 20380 --- [mail-service] [main] c.o.mail_service.MailServiceApplication  : The following 1 profile is active: "prod"
+2025-12-11T16:18:35.444+06:30  INFO 20380 --- [mail-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-11T16:18:35.476+06:30  INFO 20380 --- [mail-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 JPA repository interfaces.
+2025-12-11T16:18:35.914+06:30  INFO 20380 --- [mail-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-11T16:18:36.000+06:30  INFO 20380 --- [mail-service] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 7.1.8.Final
+2025-12-11T16:18:36.510+06:30  INFO 20380 --- [mail-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-11T16:18:36.554+06:30  INFO 20380 --- [mail-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-11T16:18:36.977+06:30  INFO 20380 --- [mail-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@296676c4
+2025-12-11T16:18:36.977+06:30  INFO 20380 --- [mail-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-11T16:18:37.009+06:30  WARN 20380 --- [mail-service] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-11T16:18:37.028+06:30  INFO 20380 --- [mail-service] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [jdbc:postgresql://localhost:5432/pos_db]
 	Database driver: PostgreSQL JDBC Driver
 	Database dialect: PostgreSQLDialect
@@ -148,15 +84,16 @@ Caused by: java.net.SocketTimeoutException: Read timed out
 	Pool: DatasourceConnectionProviderImpl
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-12-10T22:29:06.609+06:30  INFO 51494 --- [mail-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-12-10T22:29:06.617+06:30  INFO 51494 --- [mail-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-12-10T22:29:07.244+06:30  INFO 51494 --- [mail-service] [main] o.s.g.s.ShadedNettyGrpcServerFactory     : Registered gRPC service: EmailService
-2025-12-10T22:29:07.245+06:30  INFO 51494 --- [mail-service] [main] o.s.g.s.ShadedNettyGrpcServerFactory     : Registered gRPC service: grpc.reflection.v1.ServerReflection
-2025-12-10T22:29:07.246+06:30  INFO 51494 --- [mail-service] [main] o.s.g.s.ShadedNettyGrpcServerFactory     : Registered gRPC service: grpc.health.v1.Health
-2025-12-10T22:29:07.352+06:30  INFO 51494 --- [mail-service] [main] o.s.g.s.lifecycle.GrpcServerLifecycle    : gRPC Server started, listening on address: [/[0:0:0:0:0:0:0:0]:9090]
-2025-12-10T22:29:07.364+06:30  INFO 51494 --- [mail-service] [main] c.o.mail_service.MailServiceApplication  : Started MailServiceApplication in 3.054 seconds (process running for 3.337)
-2025-12-10T22:29:31.593+06:30  INFO 51494 --- [mail-service] [grpc-default-executor-0] c.o.mail_service.grpc.GrpcEmailService   : income mail request : Welcome! Please Verify Your Email[nnmm5122004@gmail.com]
-2025-12-10T22:29:31.594+06:30  INFO 51494 --- [mail-service] [grpc-default-executor-0] c.o.m.service.EmailTemplateBuilder       : successfully built mail template
-2025-12-10T22:29:31.594+06:30  INFO 51494 --- [mail-service] [grpc-default-executor-0] c.o.m.service.EmailSenderService         : sending otp mail
-2025-12-10T22:29:39.099+06:30  INFO 51494 --- [mail-service] [grpc-default-executor-0] c.o.m.service.EmailSenderService         : sent otp mail successfully
-2025-12-10T22:29:39.106+06:30  INFO 51494 --- [mail-service] [grpc-default-executor-0] c.o.mail_service.grpc.GrpcEmailService   : send response to request service : Successfully send mail
+2025-12-11T16:18:37.403+06:30  INFO 20380 --- [mail-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-11T16:18:37.409+06:30  INFO 20380 --- [mail-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-11T16:18:37.615+06:30  INFO 20380 --- [mail-service] [main] g.s.a.GrpcServerFactoryAutoConfiguration : Detected grpc-netty-shaded: Creating ShadedNettyGrpcServerFactory
+2025-12-11T16:18:38.235+06:30  INFO 20380 --- [mail-service] [main] n.d.b.g.s.s.AbstractGrpcServerFactory    : Registered gRPC service: EmailService, bean: grpcEmailService, class: com.oroin.mail_service.grpc.GrpcEmailService
+2025-12-11T16:18:38.235+06:30  INFO 20380 --- [mail-service] [main] n.d.b.g.s.s.AbstractGrpcServerFactory    : Registered gRPC service: grpc.health.v1.Health, bean: grpcHealthService, class: io.grpc.protobuf.services.HealthServiceImpl
+2025-12-11T16:18:38.235+06:30  INFO 20380 --- [mail-service] [main] n.d.b.g.s.s.AbstractGrpcServerFactory    : Registered gRPC service: grpc.reflection.v1alpha.ServerReflection, bean: protoReflectionService, class: io.grpc.protobuf.services.ProtoReflectionService
+2025-12-11T16:18:38.505+06:30  INFO 20380 --- [mail-service] [main] n.d.b.g.s.s.GrpcServerLifecycle          : gRPC Server started, listening on address: *, port: 9090
+2025-12-11T16:18:38.505+06:30  INFO 20380 --- [mail-service] [main] c.o.mail_service.MailServiceApplication  : Started MailServiceApplication in 4.236 seconds (process running for 4.775)
+2025-12-11T16:19:34.832+06:30  INFO 20380 --- [mail-service] [grpc-default-executor-0] c.o.mail_service.grpc.GrpcEmailService   : income mail request : Welcome! Please Verify Your Email[nnmm5122004@gmail.com]
+2025-12-11T16:19:34.834+06:30  INFO 20380 --- [mail-service] [grpc-default-executor-0] c.o.m.service.EmailTemplateBuilder       : successfully built mail template
+2025-12-11T16:19:34.834+06:30  INFO 20380 --- [mail-service] [grpc-default-executor-0] c.o.m.service.EmailSenderService         : sending otp mail
+2025-12-11T16:19:50.148+06:30  INFO 20380 --- [mail-service] [grpc-default-executor-0] c.o.m.service.EmailSenderService         : sent otp mail successfully
+2025-12-11T16:19:50.166+06:30  INFO 20380 --- [mail-service] [grpc-default-executor-0] c.o.mail_service.grpc.GrpcEmailService   : send response to request service : Successfully send mail

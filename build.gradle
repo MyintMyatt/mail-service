@@ -53,15 +53,11 @@ dependencies {
 
     /*grpc*/
     implementation 'io.grpc:grpc-services'
-//    implementation 'org.springframework.grpc:spring-grpc-server-web-spring-boot-starter'
 
-    implementation "org.springframework.grpc:spring-grpc-spring-boot-starter"
-    implementation 'io.grpc:grpc-netty-shaded'
-    modules {
-        module("io.grpc:grpc-netty") {
-            replacedBy("io.grpc:grpc-netty-shaded", "Use Netty shaded instead of regular Netty")
-        }
-    }
+    implementation 'io.grpc:grpc-netty-shaded:1.76.0'
+//    implementation 'net.devh:grpc-server-spring-boot-starter:2.15.0.RELEASE'
+    implementation 'net.devh:grpc-server-spring-boot-starter:3.1.0.RELEASE'
+
     /*thymeleaf*/
     implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
     implementation 'org.thymeleaf.extras:thymeleaf-extras-springsecurity6'

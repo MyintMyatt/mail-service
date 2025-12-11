@@ -7,7 +7,11 @@ grpc:
   server:
     port: 9090
     security:
-      enabled: false
+      enabled: true
+      trustCertCollection: classpath:certs/ca.crt
+      certificateChain: classpath:certs/server.crt
+      privateKey: classpath:certs/server.key
+      clientAuth: REQUIRE
 spring:
   application:
     name: mail-service
@@ -50,9 +54,10 @@ spring:
 logging:
   level:
     root: INFO
-  structured:
-    format:
-      console: ecs
+#  structured:
+#    format:
+#      console: ecs
   file:
     name: mail-service-log.json
+
 
