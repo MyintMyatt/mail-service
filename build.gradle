@@ -30,20 +30,12 @@ ext {
 }
 
 dependencies {
-//    implementation('org.springframework.boot:spring-boot-starter-webmvc') {
-//        exclude(group: 'org.springframework.boot', module: 'spring-boot-starter-tomcat')
-//    }
-
-    /*jetty*/
-//    implementation 'org.springframework.boot:spring-boot-starter-jetty:4.0.0'
-//    implementation 'org.eclipse.jetty.http2:jetty-http2-server:12.1.4'
-
     /*kafka*/
     implementation 'org.springframework.boot:spring-boot-starter-kafka'
 
     implementation 'org.springframework.boot:spring-boot-starter-actuator'
 
-    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+//    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 
     /*mail*/
     implementation 'org.springframework.boot:spring-boot-starter-mail'
@@ -64,10 +56,10 @@ dependencies {
 
     compileOnly 'org.projectlombok:lombok'
     runtimeOnly 'io.micrometer:micrometer-registry-prometheus'
-    runtimeOnly 'org.postgresql:postgresql'
+//    runtimeOnly 'org.postgresql:postgresql'
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation 'org.springframework.boot:spring-boot-starter-actuator-test'
-    testImplementation 'org.springframework.boot:spring-boot-starter-data-jpa-test'
+//    testImplementation 'org.springframework.boot:spring-boot-starter-data-jpa-test'
     testImplementation 'org.springframework.boot:spring-boot-starter-kafka-test'
     testImplementation 'org.springframework.boot:spring-boot-starter-mail-test'
     testImplementation 'org.springframework.boot:spring-boot-starter-security-test'
