@@ -15,8 +15,12 @@ grpc:
 spring:
   application:
     name: mail-service
-  profiles:
-    active: prod
+  # kafka config
+  kafka:
+    producer:
+      bootstrap-servers: localhost:9092
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer # Serializer for the log message value (JSON string)
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
   # database config
 #  datasource:
 #    url: jdbc:postgresql://localhost:5432/pos_db
@@ -54,10 +58,13 @@ spring:
 logging:
   level:
     root: INFO
+  # custom property
+  kafka:
+    topic: mail-service-logs
 #  structured:
 #    format:
 #      console: ecs
-  file:
-    name: mail-service-log.json
+#  file:
+#    name: mail-service-log.json
 
 

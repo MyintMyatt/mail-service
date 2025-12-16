@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <!-- Console appender for local development -->
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder class="net.logstash.logback.encoder.LogstashEncoder"/>
+    </appender>
+
+    <!-- Kafka appender for sending logs to Kafka (consumed by Logstash) -->
+    <appender name="KAFKA" class="com.github.danielwegener.logback.kafka.KafkaAppender">
+        <encoder class="net.logstash.logback.encoder.LogstashEncoder"/>
+        <topic>logs-topic</topic>  <!-- Your Kafka topic name -->
+        <keyingStrategy class="com.github.danielwegener.logback.kafka.keying.NoKeyKeyingStrategy"/> <!-- Optional: no key -->
+        <deliveryStrategy class="com.github.danielwegener.logback.kafka.delivery.AsynchronousDeliveryStrategy"/> <!-- Async to avoid blocking -->
+        <producerConfig>bootstrap.servers=localhost:9092</producerConfig> <!-- Your Kafka bootstrap servers -->
+        <!-- Additional producer configs (optional, e.g., for reliability) -->
+        <producerConfig>acks=1</producerConfig>
+        <producerConfig>retries=3</producerConfig>
+    </appender>
+
+    <!-- Optional: Wrap Kafka in AsyncAppender for better performance/non-blocking -->
+    <appender name="ASYNC_KAFKA" class="ch.qos.logback.classic.AsyncAppender">
+        <appender-ref ref="KAFKA"/>
+        <queueSize>500</queueSize>
+        <discardingThreshold>0</discardingThreshold> <!-- Don't discard when queue full -->
+    </appender>
+
+    <root level="INFO">
+        <appender-ref ref="CONSOLE"/>
+        <appender-ref ref="ASYNC_KAFKA"/>  <!-- Or directly <appender-ref ref="KAFKA"/> -->
+    </root>
+</configuration>
